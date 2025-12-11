@@ -18,8 +18,8 @@ FreeFire-Api is a lightweight Python project that interacts with internal Free F
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/0xMe/FreeFire-Api.git
-   cd FreeFire-Api
+   git clone https://github.com/khangapi/FreeFire.git
+   cd FreeFire
    ```
 
 2. **Install dependencies**
@@ -41,9 +41,9 @@ FreeFire-Api is a lightweight Python project that interacts with internal Free F
 
 ### REST Endpoints
 
-#### Get Player Stats
+#### Get Game Mode Info
 
-`GET /get_player_stats`
+`GET /gamemode`
 
 Query Parameters:
 - `server` (default: "IND") — The server region.
@@ -52,11 +52,11 @@ Query Parameters:
 - `matchmode` (default: "CAREER") — Match mode. (`CAREER`, `NORMAL`, `RANKED`)
 
 Example:
-    https://freefire-api-six.vercel.app/get_player_stats?server=ind&uid=11959685790&matchmode=RANKED&gamemode=br
+    https://free-fire-alpha.vercel.app/gamemode?server=ind&uid=11959685790&matchmode=RANKED&gamemode=br
 
-#### Get Player Personal Show
+#### Get Info
 
-`GET /get_player_personal_show`
+`GET /info`
 
 Query Parameters:
 - `server` (default: "IND") — The server region.
@@ -65,18 +65,18 @@ Query Parameters:
 - `call_sign_src` (default: 7) — Call sign source.
 
 Example:
-    https://freefire-api-six.vercel.app/get_player_personal_show?server=ind&uid=1633864660
+    https://free-fire-alpha.vercel.app/info?server=ind&uid=1633864660
 
 #### Search Account By Keyword
 
-`GET /get_search_account_by_keyword`
+`GET /search`
 
 Query Parameters:
 - `server` (default: "IND") — The server region.
 - `keyword` — The Keyword.
 
 Example:
-    https://freefire-api-six.vercel.app/get_search_account_by_keyword?server=ind&keyword=Hello
+    https://free-fire-alpha.vercel.app/search?server=ind&keyword=Hello
 
 ### API Responses
 
@@ -99,14 +99,10 @@ Responses are in JSON format. Example error messages are provided for invalid pa
 
 Refer to `requirements.txt` for additional dependencies.
 
-## Deployment
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xMe%2FFreeFire-Api)
-
 ## Contributing
 
 Feel free to fork and submit pull requests. Open issues for bug reports and feature requests.
 
 ## Author
 
-[0xMe](https://github.com/0xMe)
+[khangapi](https://github.com/khangapi)
